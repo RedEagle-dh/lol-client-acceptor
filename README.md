@@ -53,5 +53,5 @@ MIT LICENSE
 
 ## Contact
 
-- Your Name: [David Hermann](mailto:redeagle.private@gmail.com)
-- Project Link: [https://github.com/redeagle-dh/lol-client-acceptor](https://github.com/redeagle-dh/lol-client-acceptor)
+- [David Hermann](mailto:redeagle.private@gmail.com)
+- [https://github.com/redeagle-dh/lol-client-acceptor](https://github.com/redeagle-dh/lol-client-acceptor)
