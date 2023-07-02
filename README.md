@@ -33,8 +33,8 @@ The script provides a convenient way to automate the repetitive task of acceptin
 ## Installation
 
 1. Make sure that you have installed python and pip
-2. Clone the repository: `git clone https://github.com/your-username/league-of-legends-automation.git`
-3. Navigate to the project directory: `cd league-of-legends-automation`
+2. Clone the repository: `git clone https://github.com/RedEagle-dh/lol-client-acceptor.git`
+3. Navigate to the project directory: `cd lol-client-acceptor`
 4. Run the script: `py main.py`
 
 ## Usage
