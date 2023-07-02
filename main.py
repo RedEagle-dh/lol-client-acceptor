@@ -45,18 +45,17 @@ def find_accept_button():
 
 def click_accept_button():
     button_center = find_accept_button()
-
-    if button_center:
-        pyautogui.moveTo(button_center[0], button_center[1])
-        pyautogui.click()
+    pyautogui.moveTo(button_center[0], button_center[1])
+    pyautogui.click()
 
 
-print("Match Acceptor started successfully! Scanning for Button in 5 sec interval.")
-try:
-    while True:
-        if find_accept_button():
-            click_accept_button()
-        print("Scanning for button...")
-        time.sleep(5)
-except KeyboardInterrupt:
-    print("Match Acceptor closed.")
+if __name__ == "__main__":
+    print("Match Acceptor started successfully! Scanning for Button in 5 sec interval.")
+    try:
+        while True:
+            print("Scanning for button...")
+            if find_accept_button():
+                click_accept_button()
+            time.sleep(5)
+    except KeyboardInterrupt:
+        print("Match Acceptor closed.")
