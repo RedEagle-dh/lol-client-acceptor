@@ -1,4 +1,2 @@
-time
 opencv-python
-tempfile
 pyautogui

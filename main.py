@@ -1,8 +1,15 @@
+import subprocess
+import sys
+
+# Erforderliche Bibliotheken installieren
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "-r", "requirements.txt"])
+
 import time
 
 import cv2
 import tempfile
 import pyautogui
+
 
 
 def find_accept_button():
