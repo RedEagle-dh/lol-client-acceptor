@@ -1,7 +1,6 @@
 import subprocess
 import sys
 
-# Erforderliche Bibliotheken installieren
 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "-r", "requirements.txt"])
 
 import time
@@ -24,7 +23,6 @@ def find_accept_button():
     image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     template_accept_gray = cv2.cvtColor(template_accept, cv2.COLOR_BGR2GRAY)
 
-    # Bilderkennung durchführen
     result_template_accept_gray = cv2.matchTemplate(image_gray, template_accept_gray, cv2.TM_CCOEFF_NORMED)
 
     min_val_result_template_accept_gray, \
@@ -32,17 +30,13 @@ def find_accept_button():
         min_loc_result_template_accept_gray, \
         max_loc_result_template_accept_gray = cv2.minMaxLoc(result_template_accept_gray)
 
-    # Schwellenwert für die Übereinstimmung festlegen
     threshold = 0.8
 
     if max_val_result_template_accept_gray >= threshold:
-        # Koordinaten des "Accept"-Buttons ermitteln
         button_width = template_accept.shape[1]
         button_height = template_accept.shape[0]
         top_left = max_loc_result_template_accept_gray
-        # bottom_right = (top_left[0] + button_width, top_left[1] + button_height)
 
-        # Mittelpunkt des "Accept"-Buttons berechnen
         button_center = (top_left[0] + button_width // 2, top_left[1] + button_height // 2)
 
         return button_center
