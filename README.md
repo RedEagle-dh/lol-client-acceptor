@@ -42,6 +42,8 @@ The script provides a convenient way to automate the repetitive task of acceptin
 1. Make sure League of Legends is running and the game client is open.
 2. Run the script: `py main.py`
 3. The script will start monitoring the game client and perform automated actions based on the predefined rules.
+  3.1 This only works if your client resolution is on it's maximum size and your client's language is english.
+  3.2 If it doesn't work anyway, make a screenshot of the Accept Button and name it like the original button is named.
 
 ## Contributing
 
