@@ -1,4 +1,4 @@
-# LoL Client Acceptor
+# LoL Queue Acceptor
 
 ## Table of Contents
 - [Disclaimer](#disclaimer)
